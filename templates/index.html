@@ -60,7 +60,12 @@
 
 
 </style>
-
+<script>
+	window.replainSettings = { id: '397c9aa6-302c-4925-8367-ec37fcbe5a52' };
+	(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+	var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+	})('https://widget.replain.cc/dist/client.js');
+	</script>
 	<!-- Slide1 -->
 	<section class="slide1">
 		<div class="wrap-slick1">
@@ -68,26 +73,11 @@
 
 				{% slides %}
 
-				<!-- <div class="item-slick1 item2-slick1" style="background-image: url({% static 'images/master-slide-03.webp' %});">-->
-<!--					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">-->
-<!--						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">-->
-<!--							Women Collection 2018-->
-<!--						</span>-->
-<!--						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">-->
-<!--							New arrivals-->
-<!--						</h2>-->
-<!--						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">-->
-<!--							&lt;!&ndash; Button &ndash;&gt;-->
-<!--							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">-->
-<!--								Shop Now-->
-<!--							</a>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div> -->
-
+				
 			</div>
 		</div>
 	</section>
+</div>
 
 	<!-- Category start -->
 	<style>
@@ -103,35 +93,11 @@
 
 				{% categories_div %}
 
-<!--				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">-->
-<!--					-->
-<!--					<div class="block1 hov-img-zoom pos-relative m-b-30">-->
-<!--						<img src="{% static 'images/banner-02.webp' %}" alt="IMG-BENNER">-->
-<!--						<div class="block1-wrapbtn w-size2">-->
-<!--							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">-->
-<!--								Dresses-->
-<!--							</a>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					-->
-<!--					<div class="block1 hov-img-zoom pos-relative m-b-30">-->
-<!--						<img src="{% static 'images/banner-05.webp' %}" alt="IMG-BENNER">-->
-<!--						<div class="block1-wrapbtn w-size2">-->
-<!--							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">-->
-<!--								Sunglasses-->
-<!--							</a>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					-->
-<!--				</div>-->
-
-
-
 
 			</div>
 		</div>
 	</section>
-
+	
 	<!-- New Product -->
 	<style>
 		.newproduct{
@@ -143,7 +109,7 @@
 		<div class="container">
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">
-					Featured Products
+					Eng ko'p sotilgan maxsulotlar
 				</h3>
 			</div>
 
@@ -161,16 +127,6 @@
 								<a href="{{item.get_absolute_url}}">
 								<img src="{{ item.image.url }}" alt="IMG-PRODUCT" 
 								style="height: 370px; width:100%; "></a>
-							   
-
-								<!-- <div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
-	
-									
-								</div> -->
 							</div>
 							
 
@@ -242,19 +198,21 @@
 	
 		}
 	</style>
-	<section class="banner2 bg5 p-t-55 p-b-55">
-		<h4 style="font-weight: 500;">Season's Essentials</h4>
+	 <section class="banner2 bg5 p-t-55 p-b-55">
+		<h3 class="m-text5 t-center">
+			Bizning mahsulotlar
+		</h3>
 		<div class="">
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/c85699cb-2813-4acd-8822-c3344fe07f17/nike-just-do-it.jpg" alt="IMG-BANNER" class="ban_img">
+						<img src="https://cdn11.bigcommerce.com/s-ljo0upzvqc/product_images/uploaded_images/wholesale2.jpeg" alt="IMG-BANNER" class="ban_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
 							<span class="m-text9 p-t-45 fs-20-sm">
-								Bold, Brights Looks
+								{% comment %} Topsam yozarman {% endcomment %}
 							</span>
 
 							<br>
@@ -263,7 +221,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								Shop Now
+								Buyurma berish
 							</a>
 						</div>
 
@@ -273,13 +231,13 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/3d8a771b-0fd0-49b0-a9ad-1c688b192bf9/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img">
+						<img src="https://cdn.shopify.com/s/files/1/0017/5154/7967/products/7_4cf4b7de-7d83-4f2d-8a74-45ca6fb53e8c_1024x.png?v=1644858161"  alt="IMG-BANNER" class="ban_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
 							<span class="m-text9 p-t-45 fs-20-sm">
-								Stay Active
+								Foydali va chiroyli
 							</span>
 
 							<br>
@@ -288,7 +246,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								Shop Now
+								Xarid qilish
 							</a>
 						</div>
 
@@ -300,10 +258,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- ------------------Banner2  start ------------------------>
-
-	<!-- ------------------Banner4  start ------------------------>
-<!-- Slide1 -->
 
 <style>
 	.slide1 button:hover{
@@ -322,18 +276,18 @@
 	
 			
 
-			<div class="item-slick1 item2-slick1" style="background-image: url('https://static.nike.com/a/images/f_auto/dpr_2.0/w_1407,c_limit/a01665bf-08e7-4d5d-8fb6-841382e3f900/nike-just-do-it.jpg');">
+			<div class="item-slick1 item2-slick1" style="background-image: url('https://letostudia.ru/wp-content/uploads/2018/12/napolnoe-kashpo-slider2-min.jpg');">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center   m-b-15" data-appear="rollIn">
-							Nike ZoomX Vaporfly NEXT%
+							Ekologik toza mahsulot
 						</span>
 						<h2 class="caption2-slide1 xl-text1 t-center   m-b-37" data-appear="lightSpeedIn">
-							FAST IS BACK
+						{% comment %} Topsam yozarman {% endcomment %}
 						</h2>
 						<div class="wrap-btn-slide1 w-size1 " data-appear="slideInUp">
 							
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
+								Buyurtma berish
 							</a>
 						</div>
 					</div>
@@ -348,18 +302,17 @@
 	<!-- ------------------Banner3  start ------------------------>
 
 	<section class="banner2 bg5 p-t-55 p-b-55">
-		<h4 style="font-weight: 500;">Training's Essentials</h4>
 		<div class="">
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/24fb4f53-ba07-46fa-934e-bcb35b0cc021/nike-just-do-it.jpg" alt="IMG-BANNER" class="ban_img">
+						<img src="https://www.bestkrovati.ru/images/tild6338-3166-4461-a434-393463303835__ozelenenie_ofica_eme.jpg" alt="IMG-BANNER" class="ban_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
 							<span class="m-text9 p-t-45 fs-20-sm">
-								SuperRe Go
+							Qulay va xamyonbop
 							</span>
 
 							<br>
@@ -368,7 +321,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								Shop Now
+								Buyurtma berish
 							</a>
 						</div>
 
@@ -378,13 +331,13 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/f33275db-0cbb-406a-8ac9-430ff07433b7/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img">
+						<img src="https://max-shops.ru/wp-content/uploads/b/9/c/b9cdf41ca1351e8d1ba2e074bc828d10.jpeg"  alt="IMG-BANNER" class="ban_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
-							<span class="m-text9 p-t-45 fs-20-sm" style="color: black;">
-								Bras and Leggings
+							<span class="m-text9 p-t-45 fs-20-sm">
+								Zamonaviy vayangicha dizayn
 							</span>
 
 							<br>
@@ -392,8 +345,8 @@
 
 								<div class="wrap-btn-slide2 w-size1 animated" data-appear="slideInUp">
 						
-							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2  trans-0-4" style="background-color: black; color:white;">
-								Shop Now
+							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2  trans-0-4" style="background-color: white; color:black	;">
+								Buyurtma berish
 							</a>
 						</div>
 
@@ -405,23 +358,22 @@
 			</div>
 		</div>
 	</section>
-	<!-- ------------------Banner3  end ------------------------>
-
 	<!-- ------------------Banner5  start ------------------------>
 
 	<section class="banner2 bg5 p-t-55 p-b-55">
-		<h4 style="font-weight: 500;">More Products</h4>
 		<div class="">
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/0bafb728-2ae2-416f-bb18-5935801c8071/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
+						<img src="https://frontonplus.ru/upload/iblock/8f6/20191119_092826.jpg" alt="IMG-BANNER" class="ban5_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
 							<br><br><br><br><br>
-						
+							<span class="m-text9 p-t-45 fs-20-sm">
+								
+							</span>
 							
 
 							<br>
@@ -430,7 +382,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								Men's
+								Buyurtma berish
 							</a>
 						</div>
 
@@ -440,7 +392,7 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/2c8754ce-6287-4e77-a198-1ad483fba257/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
+						<img src="https://static1.abitant.com/uploads/project_image/174/2155/big.jpg" alt="IMG-BANNER" class="ban5_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
@@ -453,7 +405,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								Women's
+								Buyurtma berish
 							</a>
 						</div>
 
@@ -463,7 +415,7 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/414db494-7ebc-4d53-bbff-58d50b380a24/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
+						<img src="https://b2.3ddd.ru/media/cache/tuk_model_custom_filter_ru/model_images/0000/0000/4093/4093246.624574228978e.jpeg" alt="IMG-BANNER" class="ban5_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
@@ -476,7 +428,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								Kids'
+								Buyurtma berish
 							</a>
 						</div>
 
@@ -486,47 +438,50 @@
 			
 			</div>
 		</div>
-	</section>
+	</section> 
 	<!-- ------------------Banner2  start ------------------------>
 
-
-	
-	
 
 	<!-- Shipping -->
 	<section class="shipping bgwhite p-t-62 p-b-46">
 		<div class="flex-w p-l-15 p-r-15">
 			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
 				<h4 class="m-text12 t-center">
-					Free Delivery Worldwide
+					O'zbekiston bo'ylab bepul yetkaziberish xizmati
 				</h4>
 
-				<a href="#" class="s-text11 t-center">
-					Click here for more info
-				</a>
+				<span class="s-text11 t-center">
+					Tez va Qulay
+				</span>
 			</div>
 
 			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
 				<h4 class="m-text12 t-center">
-					30 Days Return
+					+3 Yildan ortiq kafolat
 				</h4>
 
 				<span class="s-text11 t-center">
-					Simply return it within 30 days for an exchange.
+					Sifatli maxsulot
 				</span>
 			</div>
 
 			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
 				<h4 class="m-text12 t-center">
-					Store Opening
+					Halollik foydadan ustun
 				</h4>
 
 				<span class="s-text11 t-center">
-					Shop open from Monday to Sunday
+					Qadriyatlarga asoslangan jamoa
 				</span>
 			</div>
 		</div>
 	</section>
+
+
+	
+
+	
+	
 
 
 
